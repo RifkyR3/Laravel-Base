@@ -2,7 +2,13 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "back:clean": "composer install --optimize-autoloader --no-dev && composer dump-autoload && php artisan view:cache && php artisan route:cache && php artisan config:cache",
+        "front:init": "cd client && npm install",
+        "front:serve": "cd client && npm run dev",
+        "front:build": "cd client && npm run build",
+        "serve": "concurrently \"php artisan serve\" \"npm run front:serve\"",
+        "deploy": "npm run front:build && php artisan migrate"
     },
     "devDependencies": {
         "axios": "^1.1.2",
