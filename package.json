@@ -3,14 +3,35 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
+        "watch": "vite build --watch",
         "back:clean:prod": "composer install --optimize-autoloader --no-dev && composer dump-autoload && php artisan view:cache && php artisan route:cache && php artisan config:cache",
         "back:clean:dev": "composer install --optimize-autoloader && composer dump-autoload && php artisan view:cache && php artisan route:cache && php artisan config:cache",
         "back:init:dev": "npm run back:clean:dev && php artisan migrate:fresh --seed",
-        "back:init:prod": "npm run back:clean:prod && php artisan migrate"
+        "back:init:prod": "npm run back:clean:prod && php artisan migrate",
+        "serve": "concurrently \"php artisan serve\" \"npm run dev\""
     },
     "devDependencies": {
+        "@popperjs/core": "^2.11.6",
+        "@vitejs/plugin-vue": "^4.0.0",
         "axios": "^1.1.2",
+        "bootstrap": "^5.2.3",
         "laravel-vite-plugin": "^0.7.2",
-        "vite": "^4.0.0"
+        "sass": "^1.56.1",
+        "vite": "^4.0.0",
+        "vue": "^3.2.36"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.3.0",
+        "@fortawesome/free-brands-svg-icons": "^6.3.0",
+        "@fortawesome/free-regular-svg-icons": "^6.3.0",
+        "@fortawesome/free-solid-svg-icons": "^6.3.0",
+        "@fortawesome/vue-fontawesome": "^3.0.3",
+        "@vueuse/core": "^9.13.0",
+        "lodash": "^4.17.21",
+        "pinia": "^2.0.33",
+        "vee-validate": "^4.8.1",
+        "vue-loader": "^17.0.1",
+        "vue-router": "^4.1.6",
+        "yup": "^1.0.2"
     }
 }
