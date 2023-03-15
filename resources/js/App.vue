@@ -1,16 +1,17 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
-
-                    <div class="card-body">
-                        <router-view></router-view>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <component :is="layout">
+        <router-view />
+    </component>
 </template>
+
+<script setup>
+import { computed } from "vue";
+import { useRouter } from "vue-router";
+
+const defaultLayout = "default";
+const { currentRoute } = useRouter();
+
+const layout = computed(
+    () => `${currentRoute.value.meta.layout || defaultLayout}-layout`
+);
+</script>

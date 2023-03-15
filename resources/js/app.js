@@ -8,15 +8,20 @@ import {fas} from '@fortawesome/free-solid-svg-icons';
 import {far} from '@fortawesome/free-regular-svg-icons';
 import {fab} from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
-
-import './bootstrap';
-import '../sass/app.scss';
-
-const app = createApp(App);
-const pinia = createPinia();
 library.add(fas, far, fab);
 
-app.use(pinia);
+import DefaultLayout from './components/DefaultLayout.vue';
+import EmptyLayout from './components/EmptyLayout.vue';
+
+import './bootstrap';
+import '../css/app.css';
+
+const app = createApp(App);
+
+app.component('default-layout', DefaultLayout);
+app.component('empty-layout', EmptyLayout);
+
+app.use(createPinia());
 app.use(router);
 app.component('fa-icon', FontAwesomeIcon);
 app.mount('#app');
