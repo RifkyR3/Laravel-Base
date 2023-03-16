@@ -8,6 +8,13 @@ use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
+    var $guard;
+
+    public function __construct()
+    {
+        $this->guard = Auth::guard('web');;
+    }
+
     public function Login(Request $request)
     {
         $credentials = $request->validate([
@@ -29,10 +36,10 @@ class AuthController extends Controller
         ], 200);
     }
 
-    public function guard($guard = 'web')
-    {
-        return Auth::guard($guard);
-    }
+    // public function guard($guard = 'web')
+    // {
+    //     return Auth::guard($guard);
+    // }
 
     public function logout(Request $request)
     {
