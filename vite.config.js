@@ -143,7 +143,7 @@ export default defineConfig({
                 '@img': path.resolve(__dirname, 'resources/img'),
                 '@views': path.resolve(__dirname, 'resources/js/views'),
                 '@pages': path.resolve(__dirname, 'resources/js/views/pages'),
-                '@store': path.resolve(__dirname, 'resources/js/store'),
+                '@stores': path.resolve(__dirname, 'resources/js/stores'),
                 '@services': path.resolve(__dirname, 'resources/js/services'),
                 '@router': path.resolve(__dirname, 'resources/js/router'),
                 '@components': path.resolve(__dirname, 'resources/js/components'),

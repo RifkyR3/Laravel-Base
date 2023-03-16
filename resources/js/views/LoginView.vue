@@ -12,11 +12,7 @@ function onSubmit(values) {
     console.log(values);
     const authStore = useAuthStore();
     const {email, password} = values;
-    try {
-        authStore.login(email, password);
-    } catch (e) {
-        console.log(e);
-    }
+    authStore.login(email, password);
 }
 </script>
 

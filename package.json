@@ -33,11 +33,8 @@
         "vue": "^3.2.36"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-svg-core": "^6.3.0",
-        "@fortawesome/free-brands-svg-icons": "^6.3.0",
-        "@fortawesome/free-regular-svg-icons": "^6.3.0",
-        "@fortawesome/free-solid-svg-icons": "^6.3.0",
-        "@fortawesome/vue-fontawesome": "^3.0.3",
+        "@headlessui/vue": "^1.7.12",
+        "@heroicons/vue": "^2.0.16",
         "@vueuse/core": "^9.13.0",
         "lodash": "^4.17.21",
         "pinia": "^2.0.33",
