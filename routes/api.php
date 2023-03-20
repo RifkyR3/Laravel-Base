@@ -33,4 +33,4 @@ Route::group(['middleware' => ['forceHTTPS', 'activity']], function () {
             return $request->user();
         });
     });
-};
+});
