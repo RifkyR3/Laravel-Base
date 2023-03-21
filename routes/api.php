@@ -18,17 +18,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('guest')->group(function () {
-    Route::post('/login', [AuthController::class, 'login']);
-    Route::post('/register', RegisterController::class);
-    Route::post('/forgot-password', ForgotPasswordController::class);
-    Route::post('/reset-password', ResetPasswordController::class);
-});
+Route::group(['middleware' => ['forceHTTPS']], function () {
+    Route::middleware('guest')->group(function () {
+        Route::post('/login', [AuthController::class, 'login']);
+        Route::post('/register', RegisterController::class);
+        Route::post('/forgot-password', ForgotPasswordController::class);
+        Route::post('/reset-password', ResetPasswordController::class);
+    });
 
-Route::middleware('auth:sanctum')->group(function () {
-    Route::post('/logout', [AuthController::class, 'logout']);
+    Route::middleware('auth:sanctum')->group(function () {
+        Route::post('/logout', [AuthController::class, 'logout']);
 
-    Route::get('/user', function (Request $request) {
-        return $request->user();
+        Route::get('/user', function (Request $request) {
+            return $request->user();
+        });
     });
 });

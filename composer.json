@@ -8,10 +8,12 @@
         "php": "^8.1",
         "barryvdh/laravel-ide-helper": "^2.13",
         "guzzlehttp/guzzle": "^7.2",
+        "jeremykenedy/laravel-https": "^2.0",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
-        "laravel/ui": "^4.2"
+        "laravel/ui": "^4.2",
+        "laravel/telescope": "^4.14"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

@@ -29,10 +29,10 @@ class AuthController extends Controller
         ], 200);
     }
 
-    public function guard($guard = 'web')
-    {
-        return Auth::guard($guard);
-    }
+     public function guard($guard = 'web')
+     {
+         return Auth::guard($guard);
+     }
 
     public function logout(Request $request)
     {
