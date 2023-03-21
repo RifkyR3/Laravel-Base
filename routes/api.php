@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['middleware' => ['forceHTTPS', 'activity']], function () {
+Route::group(['middleware' => ['forceHTTPS']], function () {
     Route::middleware('guest')->group(function () {
         Route::post('/login', [AuthController::class, 'login']);
         Route::post('/register', RegisterController::class);

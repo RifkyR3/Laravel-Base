@@ -1,0 +1,276 @@
+{
+  "_@fortawesome-legacy.js": {
+    "file": "build/@fortawesome-legacy.js",
+    "imports": [
+      "_@vue-legacy.js"
+    ]
+  },
+  "_@fortawesome.js": {
+    "file": "build/@fortawesome.js",
+    "imports": [
+      "_@vue.js"
+    ]
+  },
+  "_@vue-legacy.js": {
+    "file": "build/@vue-legacy.js"
+  },
+  "_@vue.js": {
+    "file": "build/@vue.js"
+  },
+  "_axios-legacy.js": {
+    "file": "build/axios-legacy.js"
+  },
+  "_axios.js": {
+    "file": "build/axios.js"
+  },
+  "_pinia-legacy.js": {
+    "file": "build/pinia-legacy.js",
+    "imports": [
+      "_vue-demi-legacy.js",
+      "_@vue-legacy.js"
+    ]
+  },
+  "_pinia.js": {
+    "file": "build/pinia.js",
+    "imports": [
+      "_vue-demi.js",
+      "_@vue.js"
+    ]
+  },
+  "_property-expr-legacy.js": {
+    "file": "build/property-expr-legacy.js"
+  },
+  "_property-expr.js": {
+    "file": "build/property-expr.js"
+  },
+  "_tiny-case-legacy.js": {
+    "file": "build/tiny-case-legacy.js"
+  },
+  "_tiny-case.js": {
+    "file": "build/tiny-case.js"
+  },
+  "_toposort-legacy.js": {
+    "file": "build/toposort-legacy.js"
+  },
+  "_toposort.js": {
+    "file": "build/toposort.js"
+  },
+  "_vee-validate-legacy.js": {
+    "file": "build/vee-validate-legacy.js",
+    "imports": [
+      "_@vue-legacy.js"
+    ]
+  },
+  "_vee-validate.js": {
+    "file": "build/vee-validate.js",
+    "imports": [
+      "_@vue.js"
+    ]
+  },
+  "_vue-demi-legacy.js": {
+    "file": "build/vue-demi-legacy.js"
+  },
+  "_vue-demi.js": {
+    "file": "build/vue-demi.js"
+  },
+  "_vue-legacy.js": {
+    "file": "build/vue-legacy.js"
+  },
+  "_vue-router-legacy.js": {
+    "file": "build/vue-router-legacy.js",
+    "imports": [
+      "_@vue-legacy.js"
+    ]
+  },
+  "_vue-router.js": {
+    "file": "build/vue-router.js",
+    "imports": [
+      "_@vue.js"
+    ]
+  },
+  "_vue.js": {
+    "file": "build/vue.js"
+  },
+  "_yup-legacy.js": {
+    "file": "build/yup-legacy.js",
+    "imports": [
+      "_property-expr-legacy.js",
+      "_tiny-case-legacy.js",
+      "_toposort-legacy.js"
+    ]
+  },
+  "_yup.js": {
+    "file": "build/yup.js",
+    "imports": [
+      "_property-expr.js",
+      "_tiny-case.js",
+      "_toposort.js"
+    ]
+  },
+  "index-legacy.html": {
+    "assets": [
+      "build/logo.svg"
+    ],
+    "dynamicImports": [
+      "src/views/HomeView-legacy.vue",
+      "src/views/AboutView-legacy.vue",
+      "src/views/LoginView-legacy.vue"
+    ],
+    "file": "build/index-legacy.js",
+    "imports": [
+      "_@vue-legacy.js",
+      "_pinia-legacy.js",
+      "_@fortawesome-legacy.js",
+      "_vue-router-legacy.js",
+      "_axios-legacy.js",
+      "_vue-demi-legacy.js"
+    ],
+    "isEntry": true,
+    "src": "index-legacy.html"
+  },
+  "index.css": {
+    "file": "build/index.css",
+    "src": "index.css"
+  },
+  "index.html": {
+    "assets": [
+      "build/logo.svg"
+    ],
+    "css": [
+      "build/index.css"
+    ],
+    "dynamicImports": [
+      "src/views/HomeView.vue",
+      "src/views/AboutView.vue",
+      "src/views/LoginView.vue"
+    ],
+    "file": "build/index.js",
+    "imports": [
+      "_@vue.js",
+      "_pinia.js",
+      "_@fortawesome.js",
+      "_vue-router.js",
+      "_axios.js",
+      "_vue-demi.js"
+    ],
+    "isEntry": true,
+    "src": "index.html"
+  },
+  "src/assets/logo.svg": {
+    "file": "build/logo.svg",
+    "src": "src/assets/logo.svg"
+  },
+  "src/views/AboutView-legacy.vue": {
+    "file": "build/AboutView-legacy.js",
+    "imports": [
+      "index-legacy.html",
+      "_@vue-legacy.js",
+      "_pinia-legacy.js",
+      "_vue-demi-legacy.js",
+      "_@fortawesome-legacy.js",
+      "_vue-router-legacy.js",
+      "_axios-legacy.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/views/AboutView-legacy.vue"
+  },
+  "src/views/AboutView.css": {
+    "file": "build/AboutView.css",
+    "src": "src/views/AboutView.css"
+  },
+  "src/views/AboutView.vue": {
+    "css": [
+      "build/AboutView.css"
+    ],
+    "file": "build/AboutView.js",
+    "imports": [
+      "index.html",
+      "_@vue.js",
+      "_pinia.js",
+      "_vue-demi.js",
+      "_@fortawesome.js",
+      "_vue-router.js",
+      "_axios.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/views/AboutView.vue"
+  },
+  "src/views/HomeView-legacy.vue": {
+    "file": "build/HomeView-legacy.js",
+    "imports": [
+      "index-legacy.html",
+      "_@vue-legacy.js",
+      "_pinia-legacy.js",
+      "_vue-demi-legacy.js",
+      "_@fortawesome-legacy.js",
+      "_vue-router-legacy.js",
+      "_axios-legacy.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/views/HomeView-legacy.vue"
+  },
+  "src/views/HomeView.css": {
+    "file": "build/HomeView.css",
+    "src": "src/views/HomeView.css"
+  },
+  "src/views/HomeView.vue": {
+    "css": [
+      "build/HomeView.css"
+    ],
+    "file": "build/HomeView.js",
+    "imports": [
+      "index.html",
+      "_@vue.js",
+      "_pinia.js",
+      "_vue-demi.js",
+      "_@fortawesome.js",
+      "_vue-router.js",
+      "_axios.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/views/HomeView.vue"
+  },
+  "src/views/LoginView-legacy.vue": {
+    "file": "build/LoginView-legacy.js",
+    "imports": [
+      "_@vue-legacy.js",
+      "_vee-validate-legacy.js",
+      "_yup-legacy.js",
+      "index-legacy.html",
+      "_property-expr-legacy.js",
+      "_tiny-case-legacy.js",
+      "_toposort-legacy.js",
+      "_pinia-legacy.js",
+      "_vue-demi-legacy.js",
+      "_@fortawesome-legacy.js",
+      "_vue-router-legacy.js",
+      "_axios-legacy.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/views/LoginView-legacy.vue"
+  },
+  "src/views/LoginView.vue": {
+    "file": "build/LoginView.js",
+    "imports": [
+      "_@vue.js",
+      "_vee-validate.js",
+      "_yup.js",
+      "index.html",
+      "_property-expr.js",
+      "_tiny-case.js",
+      "_toposort.js",
+      "_pinia.js",
+      "_vue-demi.js",
+      "_@fortawesome.js",
+      "_vue-router.js",
+      "_axios.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/views/LoginView.vue"
+  },
+  "vite/legacy-polyfills-legacy": {
+    "file": "build/polyfills-legacy.js",
+    "isEntry": true,
+    "src": "vite/legacy-polyfills-legacy"
+  }
+}
