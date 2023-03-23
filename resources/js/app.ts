@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
-import App from './App.vue'
 import { createPinia } from 'pinia'
 import router from './router'
 
+import App from './App.vue'
 import DefaultLayout from './components/DefaultLayout.vue'
 import EmptyLayout from './components/EmptyLayout.vue'
 

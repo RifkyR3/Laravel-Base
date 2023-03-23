@@ -6,8 +6,7 @@ export const useAuthStore = defineStore('auth', {
     state: () => {
         return {
             authenticate: localStorage.getItem('auth') ? (localStorage.getItem('auth') == '1') : false,
-            // @ts-ignore
-            user: localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null,
+            user: JSON.parse(localStorage.getItem('user') || '{}'),
             returnUrl: ''
         }
     },
@@ -36,6 +35,7 @@ export const useAuthStore = defineStore('auth', {
 
             await getCsrf()
             await apiHelper.post('/logout')
+            return await router.push('/login')
         },
 
         async getUser() {
@@ -49,7 +49,7 @@ export const useAuthStore = defineStore('auth', {
                 })
 
             // redirect to previous url or default to home page
-            return await router.push(this.returnUrl || '/')
+            return await router.push(this.returnUrl || '/dashboard')
         }
     }
 })

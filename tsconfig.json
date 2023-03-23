@@ -1,17 +1,22 @@
 {
     "extends": "@vue/tsconfig/tsconfig.web.json",
-    "include": [
-        "resources/js/**/*",
-        "resources/js/**/*.vue"
-    ],
+    "include": ["env.d.ts", "resources/js/**/*", "resources/js/**/*.vue"],
     "compilerOptions": {
-        "baseUrl": ".",
+        "target": "es5",
+        "module": "es2020",
+        "moduleResolution": "node",
+        "baseUrl": "./",
+        "allowJs": true,
+        "strict": true,                 // Enable strict type-checking options
+        "skipLibCheck": true,           // Skip type checking of declaration files
+        "noImplicitAny": false,          // Bypass raising errors on `any` type
         "paths": {
             "@/*": [
                 "./resources/js/*"
             ]
         }
     },
+    "types": ["vite-plugin-pwa/client"],
     "references": [
         {
             "path": "./tsconfig.node.json"
